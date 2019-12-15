@@ -1,0 +1,27 @@
+export function getJwt() {
+    var cookie = document.cookie;
+
+    var jwtIndex = cookie.indexOf("jwt");
+    if (jwtIndex == -1) {
+	return "";
+    } else {
+	var jwtEnd = cookie.substring(jwtIndex).indexOf(";")
+	var jwt = cookie.substring(jwtIndex + 4, jwtEnd);
+	return jwt;
+    }
+    
+}
+
+export function setJwt(jwt) {
+    var cookie = document.cookie;
+
+    var jwtIndex = cookie.indexOf("jwt");
+    if (jwtIndex == -1) {
+	document.cookie = "jwt=" + jwt + cookie; 
+    } else {
+	var jwtStart = jwtIndex + 4;
+	var jwtEnd = cookie.substring(jwtIndex).indexOf(";")
+
+	document.cookie = cookie.substring(0, jwtStart) + jwt + cookie.substring(jwtEnd);
+    }
+}
