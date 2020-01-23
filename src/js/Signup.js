@@ -1,5 +1,5 @@
 import React from "react";
-import './Login.css';
+import '../css/Login.css';
 import $ from 'jquery';
 
 import {getJwt, setJwt} from "./utils.js"; 

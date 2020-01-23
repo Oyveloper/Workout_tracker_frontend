@@ -14,7 +14,7 @@ import Dashboard from './Dashboard.js';
 
 import $ from 'jquery';
 
-import './App.css';
+import '../css/App.css';
 
 function App() {
   return (
