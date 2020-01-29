@@ -1,0 +1,73 @@
+.WorkoutOverviewCard {
+    box-shadow: 7px 7px 12px #d1cdc780, -6px -6px 12px #fff8;
+    background-color: #eee;
+
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    border-radius: 10px;
+    max-width: 350px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    transition: transform 0.3s;
+}
+
+
+
+.WorkoutOverviewCard:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.WorkoutOverviewCard h2 {
+    font-size: 28px;
+}
+
+
+.max-container {
+    font-style: italic;
+}
+
+.max-title {
+    text-align: right;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+.max {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.WorkoutDetailCard {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    
+    background-color: white;
+    border-radius: 8px;
+}
+
+.max-title-detail {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.workout-graph {
+    height: 100px;
+}
+
+.workout-graph-container {
+    margin-bottom: 30px;
+}
