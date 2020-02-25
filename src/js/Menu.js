@@ -8,7 +8,7 @@ export default function Menu(props) {
     const links = [
         <li className={current === 'dashboard' ? 'current' : ''} key="dash"><a href="/dashboard">Dashboard</a></li>,
 	<li className={current === 'about' ? 'current' : ''} key="about"><a href="/about">About us</a></li>,
-        <li><a href="" onClick={logut} key="logut">Logout</a></li>
+        <li key="logut"><a href="" onClick={logut}>Logout</a></li>
     ];
     
     return (

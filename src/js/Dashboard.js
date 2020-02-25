@@ -66,7 +66,7 @@ export default function Dashboard() {
 	    }
 
 	}).done((response) => {
-	    console.log(response);
+
 	    setWorkouts(response);
 
 	    setHasData(true);
