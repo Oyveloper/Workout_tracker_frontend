@@ -17,14 +17,14 @@ export default function Dashboard() {
     function handleClick(e) {
 	const el = e.target;
 
-	if (el.className == "popup") {
+	if (el.className === "popup") {
 	    setShowDetail(false);
 	    return;
 	}
 
 
 	var workoutName = ""; 
-	if (el.className != "WorkoutOverviewCard") {
+	if (el.className !== "WorkoutOverviewCard") {
 	    var matchingParents = $(el).parents(".WorkoutOverviewCard");
 	    if (matchingParents.length > 0) {
 
@@ -37,13 +37,13 @@ export default function Dashboard() {
 	}
 	var workoutData; 
 	workouts.forEach((workout) => {
-	    if (workout.name == workoutName) {
+	    if (workout.name === workoutName) {
 		workoutData = workout;
 		return;
 	    }
 	});
 
-	if (!(workoutData == null)) {
+	if (!(workoutData === null)) {
 	    setDetailWorkout(workoutData); 
 	    setShowDetail(true);
 	}
@@ -66,7 +66,7 @@ export default function Dashboard() {
 	    }
 
 	}).done((response) => {
-	    console.log(response);
+
 	    setWorkouts(response);
 
 	    setHasData(true);
@@ -89,7 +89,7 @@ export default function Dashboard() {
 		 : null;
 
     return (
-	<div>
+	<div className="Dashboard">
 	    <h1>Dashboard</h1>
 
 	    <ul>

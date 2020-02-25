@@ -11,37 +11,48 @@ import {
 import Login from './Login.js';
 import Signup from './Signup.js';
 import Dashboard from './Dashboard.js';
+import Menu from './Menu.js';
+
 
 import $ from 'jquery';
 
 import '../css/App.css';
 
 function App() {
-  return (
-      <Router>
+    return (
+	<div id="App">
+	    <Router>
+		<Switch>
+		    
+		    <Route path="/login">
 
-	  <Switch>
-	      
-              <Route path="/login">
-		  <Login />
-              </Route>
+			<Login />
+		    </Route>
 
-	      <Route path ="/signup">
-		  <Signup />
-	      </Route>
-	      <Route path="/dashboard">
-		  <Dashboard />
-	      </Route>
-	      <Route path="/">
-		  <Redirect to='/dashboard'/>
-	      </Route>
-	      
-	  </Switch>
+		    <Route path ="/signup">
+			<Signup />
+		    </Route>
+		    <Route path="/dashboard">
+			<Menu current="dashboard"/>
+			<Dashboard />
+		    </Route>
+		    <Route path="/about">
+			<Menu current="about" />
+			<div>About us</div>
+		    </Route>
+		    <Route path="/">
+			<Redirect to='/dashboard'/>
+		    </Route>
+		    
+		    
+		</Switch>
 
-      </Router>
+	    </Router>
 
 
-  );
+	</div>
+
+    );
 }
 
 export default App;
