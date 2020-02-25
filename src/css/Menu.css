@@ -1,0 +1,33 @@
+.Menu {
+    position: -webkit-sticky;
+    position: sticky;
+    min-width: 120px;
+    color: white;
+    background-color: #1a1d23;
+
+
+    padding: 20px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;;
+}
+
+.Menu ul {
+    padding: 0;
+}
+
+.Menu li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.current {
+    text-decoration: underline;
+}
+
