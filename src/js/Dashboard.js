@@ -7,6 +7,8 @@ import AddBtn from './AddBtn.js';
 
 import "../css/Dashboard.css";
 
+import Menu from "./Menu";
+
 export default function Dashboard() {
 
     const [workouts, setWorkouts] = useState([]);
@@ -88,8 +90,8 @@ export default function Dashboard() {
 	    setHasData(true);
 
 	}).fail((response) => {
-	    console.log("failing");
-	    window.location.href = "/login";
+	    // console.log("failing");
+	    // window.location.href = "/login";
 	});
 
     }
