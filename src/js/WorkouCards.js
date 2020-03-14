@@ -107,6 +107,25 @@ export function NewWorkoutCard(props) {
     // Funciton passed for how to handle dismissal of this card
     const dismissCard = props.dismissCard; 
 
+
+
+    
+    // measurement: moreIsGood
+    var measurements = {
+        "reps": true,
+        "s": false,
+        "min": false,
+        "hours": false,
+        "m": true,
+        "km": true,
+        "kg": true,
+        "km/h": true,
+        "m/s": true,
+        "min/km": false
+    };
+
+
+    
     // Handle the submission of a new workout 
     function newWorkoutSubmit(e) {
         e.preventDefault();
@@ -114,7 +133,8 @@ export function NewWorkoutCard(props) {
         const wname = document.getElementById("wname").value;
         const measure = document.getElementById("measure").value;
         const number = document.getElementById("number").value;
-
+        const moreIsGood = measurements[measure];
+        
         const now = new Date();
         var day = now.getDate();
         var month = now.getMonth() + 1;
@@ -133,6 +153,7 @@ export function NewWorkoutCard(props) {
             name: wname,
             date: "" + day + month + year,
             progression: "noe",
+            moreIsGoodSorting: moreIsGood,
             ammount: number
         };
 
@@ -157,18 +178,7 @@ export function NewWorkoutCard(props) {
         });
     }
 
-    var measurements = [
-        "reps",
-        "s",
-        "m",
-        "km",
-        "kg",
-        "km/h",
-        "m/s",
-        "min/km"
-    ];
-
-    var measurementOptions = measurements.map(s => <option key={s} value={s}>{s}</option>);
+    var measurementOptions = Object.keys(measurements).map(s => <option key={s} value={s}>{s}</option>);
     
     return (
         <div className="NewWorkoutCard popup-card">

@@ -110,11 +110,18 @@ export default function Dashboard() {
     const addBtn = !showNewWorkout
           ? <AddBtn description="Add new workout" action={addNewPopup}/>
           : null;
-    
-    return (
-	<div className="Dashboard">
-	    <h1>Dashboard</h1>
 
+    const noDataMessage = (workouts.length === 0 && hasData)
+          ? <h2>No workouts yet... Try adding one!</h2>
+          : null;
+
+
+
+
+    return (
+        <div className="Dashboard">
+	  <h1>Dashboard</h1>
+          {noDataMessage}
 	    <ul>
 		{workoutItems}
 	    </ul>
