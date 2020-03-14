@@ -17,6 +17,8 @@
     
 
     transition: transform 0.3s;
+
+    margin: 10px;
 }
 
 
@@ -50,13 +52,17 @@
     margin: 10px 0;
 }
 
-.WorkoutDetailCard {
+.popup-card {
     box-sizing: border-box;
     padding: 20px;
     width: 50%;
     
     background-color: white;
     border-radius: 8px;
+}
+
+.WorkoutDetailCard {
+    
 }
 
 .max-title-detail {
@@ -71,3 +77,34 @@
 .workout-graph-container {
     margin-bottom: 30px;
 }
+
+.NewWorkoutCard form{
+    text-align: left;
+}
+.NewWorkoutCard form input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #0003;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background-color: white;
+    height: 50px;
+    
+}
+
+.NewWorkoutCard form input[type=submit] {
+    background-color: #4BB543;
+    border: none;
+    color: white;
+    cursor: pointer;
+	      
+}
+
+
+.NewWorkoutCard label {
+    font-weight: bold;
+}
+

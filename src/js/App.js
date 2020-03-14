@@ -25,7 +25,6 @@ function App() {
 		<Switch>
 		    
 		    <Route path="/login">
-
 			<Login />
 		    </Route>
 

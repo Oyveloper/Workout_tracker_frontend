@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import $ from 'jquery';
 
 import {getJwt} from "./utils.js";
-import {WorkoutOverviewCard, WorkoutDetailCard} from "./WorkouCards.js";
+import {WorkoutOverviewCard, WorkoutDetailCard, NewWorkoutCard} from "./WorkouCards.js";
+import AddBtn from './AddBtn.js';
 
 import "../css/Dashboard.css";
 
@@ -11,7 +12,8 @@ export default function Dashboard() {
     const [workouts, setWorkouts] = useState([]);
     const [hasData, setHasData] = useState(false);
     const [showDetail, setShowDetail] = useState(false);
-    const [detailWorkout, setDetailWorkout] = useState({}); 
+    const [detailWorkout, setDetailWorkout] = useState({});
+    const [showNewWorkout, setShowNewWorkout] = useState(false);
 
     // A little bit ugly to have this funciton inside a function but who cares...
     function handleClick(e) {
@@ -19,6 +21,7 @@ export default function Dashboard() {
 
 	if (el.className === "popup") {
 	    setShowDetail(false);
+            setShowNewWorkout(false);
 	    return;
 	}
 
@@ -43,12 +46,25 @@ export default function Dashboard() {
 	    }
 	});
 
-	if (!(workoutData === null)) {
+	if (!(workoutData == null)) {
 	    setDetailWorkout(workoutData); 
 	    setShowDetail(true);
 	}
 
     }
+
+    
+    function addNewPopup() {
+        setShowNewWorkout(true);
+        
+    }
+
+    function removeNewWorkoutPopup() {
+        setShowNewWorkout(false);
+
+        setHasData(false); 
+    }
+
 
     
     document.addEventListener("click", handleClick);
@@ -59,7 +75,7 @@ export default function Dashboard() {
 	    url: "http://localhost:8080/workoutlist",
 	    beforeSend: function (xhr) {
 		xhr.setRequestHeader("Authorization", getJwt());
-		xhr.setRequestHeader("boop", "helo");
+	
 	    },
 	    headers: {
 		"Authorization": getJwt()
@@ -73,7 +89,7 @@ export default function Dashboard() {
 
 	}).fail((response) => {
 	    console.log("failing");
-	    window.location.href = "/login"
+	    window.location.href = "/login";
 	});
 
     }
@@ -85,9 +101,16 @@ export default function Dashboard() {
     }
 
     const detail = showDetail
-		 ? <div className="popup"><WorkoutDetailCard workoutData={detailWorkout} /></div>
-		 : null;
+	  ? <div className="popup"><WorkoutDetailCard workoutData={detailWorkout} /></div>
+	  : null;
+    const newWorkout = showNewWorkout
+          ? <div className="popup"><NewWorkoutCard dismissCard={removeNewWorkoutPopup}/></div>
+          : null;
 
+    const addBtn = !showNewWorkout
+          ? <AddBtn description="Add new workout" action={addNewPopup}/>
+          : null;
+    
     return (
 	<div className="Dashboard">
 	    <h1>Dashboard</h1>
@@ -95,11 +118,15 @@ export default function Dashboard() {
 	    <ul>
 		{workoutItems}
 	    </ul>
-	    {detail}
+	  {detail}
+          {newWorkout}
+
+          {addBtn}
 	</div>
 	
     );
     
 
 }
+
 
