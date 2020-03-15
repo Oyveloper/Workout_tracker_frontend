@@ -13,7 +13,7 @@ import Signup from './Signup.js';
 import Dashboard from './Dashboard.js';
 import Menu from './Menu.js';
 import ProtectedRoute from "./ProtectedRoute";
-
+import Custom404 from "./Custom404";
 import auth from "./auth";
 
 
@@ -53,7 +53,8 @@ function App() {
 		  <Route exact path="/">
 		    <Redirect to='/dashboard'/>
 		  </Route>
-		    
+
+                  <Route exact path="*" component={Custom404}/>
 		</Switch>
 
 	    </Router>
