@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import $ from 'jquery';
 
-import {getJwt} from "./utils.js";
+import api from "./api";
 import {WorkoutOverviewCard, WorkoutDetailCard, NewWorkoutCard} from "./WorkouCards.js";
 import AddBtn from './AddBtn.js';
 
@@ -72,27 +72,11 @@ export default function Dashboard() {
     document.addEventListener("click", handleClick);
 
     if (!hasData) {
-	$.ajax({
-	    type: "GET",
-	    url: "http://localhost:8080/workoutlist",
-	    beforeSend: function (xhr) {
-		xhr.setRequestHeader("Authorization", getJwt());
-	
-	    },
-	    headers: {
-		"Authorization": getJwt()
-	    }
 
-	}).done((response) => {
-
-	    setWorkouts(response);
-
-	    setHasData(true);
-
-	}).fail((response) => {
-	    // console.log("failing");
-	    // window.location.href = "/login";
-	});
+        api.getWorkoutList((response) => {
+            setWorkouts(response);
+            setHasData(true);
+        }, console.log);
 
     }
     var workoutItems = [];

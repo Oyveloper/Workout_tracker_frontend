@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../css/Menu.css';
-import {setJwt} from './utils.js';
 import auth from "./auth";
 import {Redirect} from "react-router-dom";
 

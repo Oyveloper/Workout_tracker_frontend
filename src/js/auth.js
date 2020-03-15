@@ -1,7 +1,5 @@
 import $ from 'jquery';
 
-import {getJwt, setJwt} from "./utils.js";
-
 class Auth {
     login(email, password, cb, fail) {
 
@@ -21,31 +19,28 @@ class Auth {
         }).done((response) => {
 
 	    var jwt = response["jwt"];
-	    setJwt(jwt);
+	    this.setJwt(jwt);
 
             cb();
         });
     }
 
     logout(cb) {
-        setJwt("");
+        this.setJwt("");
         cb();
     }
 
     checkAuthentication(cb) {
-        const jwt = getJwt();
+        const jwt = this.getJwt();
 
         if (jwt != "" ||  jwt != null) {
 
             $.ajax({
                 type: "GET",
                 url: "http://localhost:8080/auth/isAuthenticated",
-                beforeSend: function (xhr) {
-		    xhr.setRequestHeader("Authorization", getJwt());
-	            
-	        },
+
 	        headers: {
-		    "Authorization": getJwt()
+		    "Authorization": jwt
 	        }
 
 
@@ -58,6 +53,44 @@ class Auth {
             cb(false);
         }
         
+    }
+
+    getJwt() {
+        var cookie = document.cookie;
+
+        var jwtIndex = cookie.indexOf("jwt");
+        if (jwtIndex === -1) {
+	    return "";
+        } else {
+	    var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
+	    var jwt = "";
+	    if (jwtEndRaw === -1) {
+	        jwt = cookie.substring(jwtIndex + 4);
+	    }
+	    else {
+	        jwt = cookie.substring(jwtIndex + 4, jwtEndRaw + jwtIndex);
+	    }
+	    return jwt;
+        }
+    }
+    setJwt(jwt) {
+        var cookie = document.cookie;
+
+        var jwtIndex = cookie.indexOf("jwt");
+        if (jwtIndex === -1) {
+	    document.cookie = "jwt=" + jwt + cookie; 
+        } else {
+	    var jwtStart = jwtIndex + 4;
+	    var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
+
+	    if (jwtEndRaw === -1) {
+	        document.cookie = cookie.substring(0, jwtStart) + jwt; 
+	    } else {
+	        document.cookie = cookie.substring(0, jwtStart) + jwt + cookie.substring(jwtEndRaw);
+	    }
+
+
+        }
     }
 
 }

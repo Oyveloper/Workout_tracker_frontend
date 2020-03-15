@@ -2,7 +2,7 @@ import React from "react";
 import "../css/WorkoutCard.css";
 import $ from 'jquery';
 
-import {getJwt} from './utils.js';
+import auth from "./auth";
 
 import Chart from "chart.js";
 
@@ -54,7 +54,7 @@ function lineChartForWorkout(workout, targetID) {
 		}   
             }]
 	}
-    }
+    };
 
     var chart = new Chart(ctx, {
 	type: 'line',
@@ -161,11 +161,11 @@ export function NewWorkoutCard(props) {
             type: "POST",
             url: "http://localhost:8080/addWorkoutEntry",
             beforeSend: function(xhr) {
-                xhr.setRequestHeader("Authorization", getJwt());
+                xhr.setRequestHeader("Authorization", auth.getJwt());
 
             },
             headers: {
-                "Authorization": getJwt()
+                "Authorization": auth.getJwt()
             },
             data: data
         }).fail((e) => {

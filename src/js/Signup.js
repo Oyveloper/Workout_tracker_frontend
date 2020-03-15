@@ -2,7 +2,7 @@ import React from "react";
 import '../css/Login.css';
 import $ from 'jquery';
 
-import {getJwt, setJwt} from "./utils.js"; 
+
 
 export default function Signup() {
     return (
@@ -48,19 +48,19 @@ function signupSubmit(e) {
 
 
     
-    $.ajax({
-	type: "POST",
-	url: signupURL,
-	data: data,
-    }).fail((e) => {
-	console.log("Error", e);
-    }).done((response) => {
-	var jwt = response["jwt"];
+    // $.ajax({
+    // 	type: "POST",
+    // 	url: signupURL,
+    // 	data: data,
+    // }).fail((e) => {
+    // 	console.log("Error", e);
+    // }).done((response) => {
+    // 	var jwt = response["jwt"];
 
-	setJwt(jwt);
+    // 	setJwt(jwt);
 
-	window.location.href = "/workouts";
-    });
+    // 	window.location.href = "/workouts";
+    // });
     
 }
 

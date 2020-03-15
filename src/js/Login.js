@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import '../css/Login.css';
 import $ from 'jquery';
-import {getJwt, setJwt} from "./utils.js";
 
 import {Redirect} from "react-router-dom";
 
