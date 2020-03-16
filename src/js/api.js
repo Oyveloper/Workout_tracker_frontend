@@ -3,7 +3,7 @@ import auth from "./auth";
 
 class Api {
     constructor() {
-        this.baseURL = "http://localhost:8080";
+        this.baseURL = "/api";
     }
     getWorkoutList(cb, fail) {
         const workoutURL = this.baseURL + "/workoutList";
