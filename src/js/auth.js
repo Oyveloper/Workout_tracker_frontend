@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class Auth {
     constructor() {
-        this.baseURL = "http://localhost:8080/auth";
+        this.baseURL = "/api/auth";
     }
     login(email, password, cb, fail) {
 
