@@ -1,9 +1,12 @@
 import $ from 'jquery';
 
 class Auth {
+    constructor() {
+        this.baseURL = "http://localhost:8080/auth";
+    }
     login(email, password, cb, fail) {
 
-        const loginURL = "http://localhost:8080/auth/login";
+        const loginURL = this.baseURL + "/login";
 
         var data = {
 	    "email": email,
@@ -17,12 +20,52 @@ class Auth {
         }).fail((e) => {
             fail();
         }).done((response) => {
+            if (response["status"] == "success") {
+                var jwt = response["data"]["jwt"];
+	        this.setJwt(jwt);
 
-	    var jwt = response["jwt"];
-	    this.setJwt(jwt);
+                cb();
+            } else {
+                fail();
+            }
 
-            cb();
         });
+    }
+
+    signup(name, email, password, cb, fail) {
+        const signupURL = this.baseURL + "/signup";
+        const data = {
+            "email": email,
+            "name": name,
+            "password": password
+        };
+
+        
+        $.ajax({
+    	    type: "POST",
+    	    url: signupURL,
+    	    data: data,
+        }).fail((e) => {
+    	    fail(e);
+        }).done((response) => {
+            console.log(typeof response); 
+            if (response.status === "success") {
+                var jwt = response["data"]["jwt"];
+
+                this.login(email, password, () => {
+                    cb();
+                }, () => {
+                    // do something on fail
+                    fail("Noe gikk galt...");
+                });
+            } else {
+                console.log(response);
+                fail(response["data"]["cause"]);
+            }
+            
+            
+        });
+        
     }
 
     logout(cb) {

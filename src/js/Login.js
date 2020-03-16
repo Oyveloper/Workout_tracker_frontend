@@ -53,6 +53,8 @@ export default function Login() {
 
 		<input type="submit" value="Login" className="submit-btn" />
 	      </form>
+
+              <p>Dont have a user? Sign up <a href="/signup">here</a></p>
 	    </div>
 	</div>
     );
