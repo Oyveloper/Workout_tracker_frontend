@@ -80,7 +80,7 @@ class Auth {
 
             $.ajax({
                 type: "GET",
-                url: "/api/8080/auth/isAuthenticated",
+                url: "/api/auth/isAuthenticated",
 
 	        headers: {
 		    "Authorization": jwt
