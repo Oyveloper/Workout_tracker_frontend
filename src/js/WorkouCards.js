@@ -159,7 +159,7 @@ export function NewWorkoutCard(props) {
 
         $.ajax({
             type: "POST",
-            url: "http://localhost:8080/addWorkoutEntry",
+            url: "api/addWorkoutEntry",
             beforeSend: function(xhr) {
                 xhr.setRequestHeader("Authorization", auth.getJwt());
 
