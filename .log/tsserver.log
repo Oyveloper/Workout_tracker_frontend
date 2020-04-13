@@ -1,0 +1,152 @@
+Info 0    [18:16:45.999] Starting TS Server
+Info 1    [18:16:45.999] Version: 3.8.3
+Info 2    [18:16:45.999] Arguments: /usr/bin/node /home/oyvind/.emacs.d/.cache/lsp/npm/typescript/bin/tsserver --logFile /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/da1f8d9914107c89112283fcadeddbb3/tscancellation*
+Info 3    [18:16:45.999] Platform: linux NodeVersion: 10 CaseSensitive: true
+Info 4    [18:16:46.10] Search path: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js
+Info 5    [18:16:46.11] For info: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/App.js :: No config files found.
+Info 6    [18:16:46.15] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 7    [18:16:46.535] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 520ms
+Info 8    [18:16:46.535] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 9    [18:16:46.535] 	Files (12)
+
+Info 10   [18:16:46.535] -----------------------------------------------
+Info 11   [18:16:48.997] DirectoryWatcher:: Triggered with /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/.#App.js :: WatchInfo: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 12   [18:16:48.997] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/.#App.js :: WatchInfo: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 13   [18:16:49.113] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 14   [18:16:49.572] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: true Elapsed: 459ms
+Info 15   [18:16:49.572] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 16   [18:16:49.572] 	Files (33)
+
+Info 17   [18:16:49.572] -----------------------------------------------
+Info 18   [18:16:49.574] getCompletionData: Get current token: 0
+Info 19   [18:16:49.574] getCompletionData: Is inside comment: 0
+Info 20   [18:16:49.574] getCompletionData: Get previous token 1: 0
+Info 21   [18:16:49.574] getCompletionData: Get previous token 2: 0
+Info 22   [18:16:49.575] getCompletionsAtPosition: isCompletionListBlocker: 1
+Info 23   [18:16:49.579] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 24   [18:16:49.584] forEachExternalModuleToImportFrom: filtered out 12 modules by package.json contents
+Info 25   [18:16:49.584] getSymbolsFromOtherSourceFileExports: 5
+Info 26   [18:16:49.590] getCompletionData: Semantic work: 15
+Info 27   [18:16:49.598] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7
+Info 28   [18:16:49.605] Structure before ensureProjectForOpenFiles:
+Info 29   [18:16:49.605] Structure after ensureProjectForOpenFiles:
+Info 30   [18:16:49.605] got projects updated in background, updating diagnostics for /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/App.js
+Info 31   [18:16:49.606] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 32   [18:16:49.610] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false Elapsed: 4ms
+Info 33   [18:16:49.610] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 34   [18:16:49.610] getCompletionData: Get current token: 0
+Info 35   [18:16:49.610] getCompletionData: Is inside comment: 0
+Info 36   [18:16:49.611] getCompletionData: Get previous token 1: 1
+Info 37   [18:16:49.611] getCompletionData: Get previous token 2: 0
+Info 38   [18:16:49.611] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 39   [18:16:49.613] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 40   [18:16:49.617] getCompletionData: Semantic work: 6
+Info 41   [18:16:49.623] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 42   [18:16:49.631] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 43   [18:16:49.635] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: false Elapsed: 4ms
+Info 44   [18:16:49.635] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 45   [18:16:49.635] getCompletionData: Get current token: 0
+Info 46   [18:16:49.635] getCompletionData: Is inside comment: 0
+Info 47   [18:16:49.635] getCompletionData: Get previous token 1: 0
+Info 48   [18:16:49.635] getCompletionData: Get previous token 2: 0
+Info 49   [18:16:49.635] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 50   [18:16:49.638] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 51   [18:16:49.642] getCompletionData: Semantic work: 7
+Info 52   [18:16:49.651] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 9
+Info 53   [18:16:50.31] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 54   [18:16:50.48] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 5 structureChanged: true Elapsed: 17ms
+Info 55   [18:16:50.48] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 56   [18:16:50.48] 	Files (33)
+
+Info 57   [18:16:50.48] -----------------------------------------------
+Info 58   [18:16:50.48] Structure before ensureProjectForOpenFiles:
+Info 59   [18:16:50.48] Structure after ensureProjectForOpenFiles:
+Info 60   [18:16:50.48] got projects updated in background, updating diagnostics for /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/App.js
+Info 61   [18:16:50.149] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 62   [18:16:50.151] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 6 structureChanged: false Elapsed: 2ms
+Info 63   [18:16:50.151] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 64   [18:16:50.399] Structure before ensureProjectForOpenFiles:
+Info 65   [18:16:50.399] Structure after ensureProjectForOpenFiles:
+Info 66   [18:16:50.399] got projects updated in background, updating diagnostics for /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/App.js
+Info 67   [18:16:50.835] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 68   [18:16:50.840] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 7 structureChanged: false Elapsed: 5ms
+Info 69   [18:16:50.840] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 70   [18:16:50.840] getCompletionData: Get current token: 0
+Info 71   [18:16:50.840] getCompletionData: Is inside comment: 0
+Info 72   [18:16:50.840] getCompletionData: Get previous token 1: 0
+Info 73   [18:16:50.840] getCompletionData: Get previous token 2: 0
+Info 74   [18:16:50.841] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 75   [18:16:50.844] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 76   [18:16:50.846] forEachExternalModuleToImportFrom: filtered out 12 modules by package.json contents
+Info 77   [18:16:50.847] getSymbolsFromOtherSourceFileExports: 3
+Info 78   [18:16:50.849] getCompletionData: Semantic work: 8
+Info 79   [18:16:50.857] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8
+Info 80   [18:16:51.119] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 81   [18:16:51.123] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 8 structureChanged: false Elapsed: 4ms
+Info 82   [18:16:51.123] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 83   [18:16:51.123] getCompletionData: Get current token: 0
+Info 84   [18:16:51.123] getCompletionData: Is inside comment: 0
+Info 85   [18:16:51.123] getCompletionData: Get previous token 1: 0
+Info 86   [18:16:51.123] getCompletionData: Get previous token 2: 0
+Info 87   [18:16:51.123] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 88   [18:16:51.126] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 89   [18:16:51.128] getCompletionData: Semantic work: 5
+Info 90   [18:16:51.133] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 91   [18:16:51.139] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 92   [18:16:51.142] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 9 structureChanged: false Elapsed: 3ms
+Info 93   [18:16:51.142] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 94   [18:16:51.142] getCompletionData: Get current token: 0
+Info 95   [18:16:51.142] getCompletionData: Is inside comment: 0
+Info 96   [18:16:51.142] getCompletionData: Get previous token 1: 0
+Info 97   [18:16:51.142] getCompletionData: Get previous token 2: 0
+Info 98   [18:16:51.142] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 99   [18:16:51.144] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 100  [18:16:51.145] getCompletionData: Semantic work: 3
+Info 101  [18:16:51.148] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 102  [18:16:51.386] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 103  [18:16:51.391] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 10 structureChanged: false Elapsed: 5ms
+Info 104  [18:16:51.392] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 105  [18:16:51.392] getCompletionData: Get current token: 0
+Info 106  [18:16:51.392] getCompletionData: Is inside comment: 0
+Info 107  [18:16:51.392] getCompletionData: Get previous token 1: 0
+Info 108  [18:16:51.392] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 109  [18:16:51.394] getCompletionData: Semantic work: 2
+Info 110  [18:16:51.397] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 111  [18:16:51.679] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 112  [18:16:51.682] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 11 structureChanged: false Elapsed: 3ms
+Info 113  [18:16:51.682] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 114  [18:16:51.682] getCompletionData: Get current token: 0
+Info 115  [18:16:51.682] getCompletionData: Is inside comment: 0
+Info 116  [18:16:51.682] getCompletionData: Get previous token 1: 0
+Info 117  [18:16:51.682] getCompletionData: Get previous token 2: 0
+Info 118  [18:16:51.682] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 119  [18:16:51.683] getCompletionData: Semantic work: 1
+Info 120  [18:16:51.684] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 121  [18:16:51.820] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 122  [18:16:51.823] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 12 structureChanged: false Elapsed: 3ms
+Info 123  [18:16:51.823] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 124  [18:16:51.824] getCompletionData: Get current token: 0
+Info 125  [18:16:51.824] getCompletionData: Is inside comment: 0
+Info 126  [18:16:51.824] getCompletionData: Get previous token 1: 0
+Info 127  [18:16:51.824] getCompletionData: Get previous token 2: 0
+Info 128  [18:16:51.824] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 129  [18:16:51.824] getCompletionData: Semantic work: 0
+Info 130  [18:16:51.825] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 131  [18:16:51.963] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 132  [18:16:51.969] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 13 structureChanged: false Elapsed: 6ms
+Info 133  [18:16:51.969] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 134  [18:16:51.970] getCompletionData: Get current token: 0
+Info 135  [18:16:51.970] getCompletionData: Is inside comment: 0
+Info 136  [18:16:51.970] getCompletionData: Get previous token 1: 0
+Info 137  [18:16:51.970] getCompletionData: Get previous token 2: 0
+Info 138  [18:16:51.970] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 139  [18:16:51.970] getCompletionData: Semantic work: 0
+Info 140  [18:16:51.971] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 141  [18:16:52.866] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 142  [18:16:52.880] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 14 structureChanged: false Elapsed: 14ms
+Info 143  [18:16:52.880] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 144  [18:16:54.499] DirectoryWatcher:: Triggered with /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/.#App.js :: WatchInfo: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 145  [18:16:54.501] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js/.#App.js :: WatchInfo: /home/oyvind/Documents/Projects/web/Workout_tracker_frontend/src/js 0 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 146  [18:16:54.702] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 147  [18:16:54.706] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 15 structureChanged: false Elapsed: 4ms
+Info 148  [18:16:54.706] Different program with same set of files:: oldProgram.structureIsReused:: 2
