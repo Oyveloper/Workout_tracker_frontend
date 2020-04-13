@@ -54,3 +54,7 @@ h1 {
 
     margin-bottom: 45px;
 }
+
+.ErrorMessage {
+    color: red;
+}
