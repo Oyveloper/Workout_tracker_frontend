@@ -1,0 +1,36 @@
+[22:6:56.171] Global cache location '/Users/oyvind/Library/Caches/typescript/3.9', safe file path '/users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typingsafelist.json', types map path /users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typesmap.json
+[22:6:56.172] Processing cache location '/Users/oyvind/Library/Caches/typescript/3.9'
+[22:6:56.173] Trying to find '/Users/oyvind/Library/Caches/typescript/3.9/package.json'...
+[22:6:56.173] Finished processing cache location '/Users/oyvind/Library/Caches/typescript/3.9'
+[22:6:56.173] Process id: 72374
+[22:6:56.173] NPM location: /usr/local/Cellar/node/12.6.0/bin/npm (explicit '--npmLocation' not  provided)
+[22:6:56.173] validateDefaultNpmLocation: false
+[22:6:56.174] Npm config file: /Users/oyvind/Library/Caches/typescript/3.9/package.json
+[22:6:56.174] Npm config file: '/Users/oyvind/Library/Caches/typescript/3.9/package.json' is missing, creating new one...
+[22:6:56.175] Updating types-registry npm package...
+[22:6:56.175] Exec: /usr/local/Cellar/node/12.6.0/bin/npm install --ignore-scripts types-registry@latest
+[22:6:56.186]     Failed. stdout:
+    
+    stderr:
+    /bin/sh: /usr/local/Cellar/node/12.6.0/bin/npm: No such file or directory
+    
+[22:6:56.187] Updated types-registry npm package
+[22:6:56.187] Types registry file '/Users/oyvind/Library/Caches/typescript/3.9/node_modules/types-registry/index.json' does not exist
+[22:6:57.704] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.d.ts","/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es5.d.ts","/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.dom.d.ts","/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/Spinner.js","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/auth.js","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/api.js","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/WorkouCards.js","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/AddBtn.js","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/Dashboard.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["chart.js","jquery","object-assign","prop-types","react"],"projectRootPath":"/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js","kind":"discover"}
+[22:6:57.723] Loaded safelist from types map file '/users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typesmap.json'
+[22:6:57.724] Explicitly included types: []
+[22:6:57.725] Inferred typings from unresolved imports: ["chart.js","jquery","object-assign","prop-types","react"]
+[22:6:57.725] Result: {"cachedTypingPaths":[],"newTypingNames":["chart.js","jquery","object-assign","prop-types","react"],"filesToWatch":["/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/bower_components","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/node_modules"]}
+[22:6:57.725] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["chart.js","jquery","object-assign","prop-types","react"],"filesToWatch":["/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/bower_components","/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/node_modules"]}
+[22:6:57.726] DirectoryWatcher:: Added:: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/bower_components
+[22:6:57.727] DirectoryWatcher:: Added:: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/node_modules
+[22:6:57.727] Installing typings ["chart.js","jquery","object-assign","prop-types","react"]
+[22:6:57.728] 'chart.js':: Entry for package 'chart.js' does not exist in local types registry - skipping...
+[22:6:57.728] 'jquery':: Entry for package 'jquery' does not exist in local types registry - skipping...
+[22:6:57.728] 'object-assign':: Entry for package 'object-assign' does not exist in local types registry - skipping...
+[22:6:57.728] 'prop-types':: Entry for package 'prop-types' does not exist in local types registry - skipping...
+[22:6:57.728] 'react':: Entry for package 'react' does not exist in local types registry - skipping...
+[22:6:57.728] All typings are known to be missing or invalid - no need to install more typings
+[22:6:57.728] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["chart.js","jquery","object-assign","prop-types","react"],"kind":"action::set"}
+[22:6:57.729] Response has been sent.
