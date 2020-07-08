@@ -2,27 +2,30 @@ import $ from 'jquery';
 
 class Auth {
     constructor() {
-        this.baseURL = "/api/auth";
+        // this.baseURL = "/api/auth";
+        this.baseURL = process.env.NODE_ENV == "production"
+            ? "/api/auth"
+            : "http://localhost:8080/auth";
     }
     login(email, password, cb, fail) {
 
         const loginURL = this.baseURL + "/login";
 
         var data = {
-	    "email": email,
-	    "password": password
+            "email": email,
+            "password": password
         };
         
         $.ajax({
-	    type: "POST",
-	    url: loginURL,
-	    data: data,
+            type: "POST",
+            url: loginURL,
+            data: data,
         }).fail((e) => {
             fail();
         }).done((response) => {
             if (response["status"] == "success") {
                 var jwt = response["data"]["jwt"];
-	        this.setJwt(jwt);
+                this.setJwt(jwt);
 
                 cb();
             } else {
@@ -42,11 +45,11 @@ class Auth {
 
         
         $.ajax({
-    	    type: "POST",
-    	    url: signupURL,
-    	    data: data,
+            type: "POST",
+            url: signupURL,
+            data: data,
         }).fail((e) => {
-    	    fail(e);
+            fail(e);
         }).done((response) => {
             console.log(typeof response); 
             if (response.status === "success") {
@@ -82,9 +85,9 @@ class Auth {
                 type: "GET",
                 url: "/api/auth/isAuthenticated",
 
-	        headers: {
-		    "Authorization": jwt
-	        }
+                headers: {
+                    "Authorization": jwt
+                }
 
 
             }).fail((e) => {
@@ -103,17 +106,17 @@ class Auth {
 
         var jwtIndex = cookie.indexOf("jwt");
         if (jwtIndex === -1) {
-	    return "";
+            return "";
         } else {
-	    var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
-	    var jwt = "";
-	    if (jwtEndRaw === -1) {
-	        jwt = cookie.substring(jwtIndex + 4);
-	    }
-	    else {
-	        jwt = cookie.substring(jwtIndex + 4, jwtEndRaw + jwtIndex);
-	    }
-	    return jwt;
+            var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
+            var jwt = "";
+            if (jwtEndRaw === -1) {
+                jwt = cookie.substring(jwtIndex + 4);
+            }
+            else {
+                jwt = cookie.substring(jwtIndex + 4, jwtEndRaw + jwtIndex);
+            }
+            return jwt;
         }
     }
     setJwt(jwt) {
@@ -121,16 +124,16 @@ class Auth {
 
         var jwtIndex = cookie.indexOf("jwt");
         if (jwtIndex === -1) {
-	    document.cookie = "jwt=" + jwt + cookie; 
+            document.cookie = "jwt=" + jwt + cookie; 
         } else {
-	    var jwtStart = jwtIndex + 4;
-	    var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
+            var jwtStart = jwtIndex + 4;
+            var jwtEndRaw = cookie.substring(jwtIndex).indexOf(";");
 
-	    if (jwtEndRaw === -1) {
-	        document.cookie = cookie.substring(0, jwtStart) + jwt; 
-	    } else {
-	        document.cookie = cookie.substring(0, jwtStart) + jwt + cookie.substring(jwtEndRaw);
-	    }
+            if (jwtEndRaw === -1) {
+                document.cookie = cookie.substring(0, jwtStart) + jwt; 
+            } else {
+                document.cookie = cookie.substring(0, jwtStart) + jwt + cookie.substring(jwtEndRaw);
+	        }
 
 
         }

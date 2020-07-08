@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 import $ from 'jquery';
+import Spinner from './Spinner.js';
 
 import api from "./api";
 import {WorkoutOverviewCard, WorkoutDetailCard, NewWorkoutCard} from "./WorkouCards.js";
 import AddBtn from './AddBtn.js';
 
 import "../css/Dashboard.css";
-
-import Menu from "./Menu";
 
 export default function Dashboard() {
 
@@ -19,39 +18,39 @@ export default function Dashboard() {
 
     // A little bit ugly to have this funciton inside a function but who cares...
     function handleClick(e) {
-	const el = e.target;
+        const el = e.target;
 
-	if (el.className === "popup") {
-	    setShowDetail(false);
+        if (el.className === "popup") {
+            setShowDetail(false);
             setShowNewWorkout(false);
-	    return;
-	}
+            return;
+        }
 
 
-	var workoutName = ""; 
-	if (el.className !== "WorkoutOverviewCard") {
-	    var matchingParents = $(el).parents(".WorkoutOverviewCard");
-	    if (matchingParents.length > 0) {
+        var workoutName = ""; 
+        if (el.className !== "WorkoutOverviewCard") {
+            var matchingParents = $(el).parents(".WorkoutOverviewCard");
+            if (matchingParents.length > 0) {
 
-		workoutName = matchingParents[0].getAttribute("name"); 
-	    } else {
-		return;
-	    }
-	} else {
-	    workoutName = el.getAttribute("name"); 
-	}
-	var workoutData; 
-	workouts.forEach((workout) => {
-	    if (workout.name === workoutName) {
-		workoutData = workout;
-		return;
-	    }
-	});
+                workoutName = matchingParents[0].getAttribute("name"); 
+            } else {
+                return;
+            }
+        } else {
+            workoutName = el.getAttribute("name"); 
+        }
+        var workoutData; 
+        workouts.forEach((workout) => {
+            if (workout.name === workoutName) {
+                workoutData = workout;
+                return;
+            }
+        });
 
-	if (!(workoutData == null)) {
-	    setDetailWorkout(workoutData); 
-	    setShowDetail(true);
-	}
+        if (!(workoutData == null)) {
+            setDetailWorkout(workoutData); 
+            setShowDetail(true);
+        }
 
     }
 
@@ -74,8 +73,10 @@ export default function Dashboard() {
     if (!hasData) {
 
         api.getWorkoutList((response) => {
-            setWorkouts(response);
-            setHasData(true);
+            setTimeout(() => {
+                setWorkouts(response);
+                setHasData(true);
+            },2000);
         }, console.log);
 
     }
@@ -83,12 +84,12 @@ export default function Dashboard() {
 
 
     for (var i = 0; i < workouts.length; i++) {
-	workoutItems.push(<WorkoutOverviewCard name={workouts[i].name} key={workouts[i].name} maxCount={workouts[i].maxRep} />);
+        workoutItems.push(<WorkoutOverviewCard name={workouts[i].name} key={workouts[i].name} maxCount={workouts[i].maxRep} />);
     }
 
     const detail = showDetail
-	  ? <div className="popup"><WorkoutDetailCard workoutData={detailWorkout} /></div>
-	  : null;
+          ? <div className="popup"><WorkoutDetailCard workoutData={detailWorkout} /></div>
+          : null;
     const newWorkout = showNewWorkout
           ? <div className="popup"><NewWorkoutCard dismissCard={removeNewWorkoutPopup}/></div>
           : null;
@@ -101,22 +102,21 @@ export default function Dashboard() {
           ? <h2>No workouts yet... Try adding one!</h2>
           : null;
 
-
-
-
     return (
-        <div className="Dashboard">
-	  <h1>Dashboard</h1>
-          {noDataMessage}
-	    <ul>
-		{workoutItems}
-	    </ul>
-	  {detail}
-          {newWorkout}
+        hasData
+            ? <div className="Dashboard">
+                <h1>Dashboard</h1>
+                {noDataMessage}
+                <ul>
+                  {workoutItems}
+                </ul>
+                {detail}
+                {newWorkout}
 
-          {addBtn}
-	</div>
-	
+                {addBtn}
+	          </div>
+        : <Spinner/>
+	    
     );
     
 
