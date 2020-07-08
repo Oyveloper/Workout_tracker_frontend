@@ -4,6 +4,7 @@ import {
     Redirect
 } from "react-router-dom";
 import auth from "./auth";
+import Spinner from "./Spinner";
 
 export default function ProtectedRoute({children, ...rest}) {
     const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +20,7 @@ export default function ProtectedRoute({children, ...rest}) {
 
     // Determines wether to wait, redirect or show the content 
     const content = isLoading
-          ? null
+          ? Spinner
           : (isAuthenticated
              ? children
              : <Redirect to="/login"/>);

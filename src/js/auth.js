@@ -3,6 +3,7 @@ import $ from 'jquery';
 class Auth {
     constructor() {
         // this.baseURL = "/api/auth";
+        console.log(process.env.NODE_ENV);
         this.baseURL = process.env.NODE_ENV == "production"
             ? "/api/auth"
             : "http://localhost:8080/auth";
@@ -83,7 +84,7 @@ class Auth {
 
             $.ajax({
                 type: "GET",
-                url: "/api/auth/isAuthenticated",
+                url: `${this.baseURL}/isAuthenticated`,
 
                 headers: {
                     "Authorization": jwt

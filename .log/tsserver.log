@@ -1657,3 +1657,350 @@ Info 1049 [22:21:2.683] DirectoryWatcher:: Triggered with /Users/oyvind/Document
 Info 1050 [22:21:2.683] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/9574e3c2177db3225476bfe3dc74c942.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
 Info 1051 [22:21:11.864] FileWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/package.json 1:: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
 Info 1052 [22:21:11.865] Elapsed:: 1ms FileWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/package.json 1:: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Err 1053  [21:13:13.336] Exception on executing command {"command":"getCodeFixes","seq":1393,"type":"request","arguments":{"file":"/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/Dashboard.js","startLine":1,"startOffset":1,"endLine":1,"endOffset":1,"errorCodes":[7016]}}:
+
+    Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+
+    Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+        at Object.cast (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:1387:25)
+        at tryGetImportedPackageName (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:131135:33)
+        at Object.getCodeActions (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:131103:35)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:127392:77
+        at Object.flatMap (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getFixes (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:127392:23)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:139204:35
+        at Object.flatMap (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getCodeFixesAtPosition (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:139202:23)
+        at IOSession.Session.getCodeFixes (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149303:64)
+        at Session.handlers.ts.createMapFromTemplate._a.<computed> (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:148040:61)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149553:88
+        at IOSession.Session.executeWithRequestId (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149544:28)
+        at IOSession.Session.executeCommand (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149553:33)
+        at IOSession.Session.onMessage (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149577:35)
+        at Interface.<anonymous> (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:150893:27)
+        at Interface.emit (events.js:203:13)
+        at Interface._onLine (readline.js:314:10)
+        at Interface._normalWrite (readline.js:459:12)
+        at Socket.ondata (readline.js:170:10)
+        at Socket.emit (events.js:203:13)
+        at addChunk (_stream_readable.js:294:12)
+        at readableAddChunk (_stream_readable.js:275:11)
+        at Socket.Readable.push (_stream_readable.js:210:10)
+        at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+Info 1054 [21:14:49.953] Search path: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js
+Info 1055 [21:14:49.954] For info: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/App.js :: No config files found.
+Info 1056 [21:14:49.964] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1057 [21:14:50.197] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 1 structureChanged: true Elapsed: 233ms
+Info 1058 [21:14:50.198] Project '/dev/null/inferredProject2*' (Inferred)
+Info 1059 [21:14:50.198] 	Files (119)
+
+Info 1060 [21:14:50.198] -----------------------------------------------
+Info 1061 [21:14:50.207] `remove Project::
+Info 1062 [21:14:50.207] Project '/dev/null/inferredProject1*' (Inferred)
+Info 1063 [21:14:50.207] 	Files (108)
+
+Info 1064 [21:14:50.207] -----------------------------------------------
+Info 1065 [21:14:50.366] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1066 [21:14:50.481] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 2 structureChanged: true Elapsed: 115ms
+Info 1067 [21:14:50.481] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Err 1068  [21:14:50.512] Exception on executing command {"command":"getCodeFixes","seq":1477,"type":"request","arguments":{"file":"/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/App.js","startLine":1,"startOffset":1,"endLine":1,"endOffset":1,"errorCodes":[7016]}}:
+
+    Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+
+    Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isStringLiteral'.
+        at Object.cast (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:1387:25)
+        at tryGetImportedPackageName (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:131135:33)
+        at Object.getCodeActions (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:131103:35)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:127392:77
+        at Object.flatMap (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getFixes (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:127392:23)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:139204:35
+        at Object.flatMap (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getCodeFixesAtPosition (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:139202:23)
+        at IOSession.Session.getCodeFixes (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149303:64)
+        at Session.handlers.ts.createMapFromTemplate._a.<computed> (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:148040:61)
+        at /Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149553:88
+        at IOSession.Session.executeWithRequestId (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149544:28)
+        at IOSession.Session.executeCommand (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149553:33)
+        at IOSession.Session.onMessage (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:149577:35)
+        at Interface.<anonymous> (/Users/oyvind/.emacs.doom.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/tsserver.js:150893:27)
+        at Interface.emit (events.js:203:13)
+        at Interface._onLine (readline.js:314:10)
+        at Interface._normalWrite (readline.js:459:12)
+        at Socket.ondata (readline.js:170:10)
+        at Socket.emit (events.js:203:13)
+        at addChunk (_stream_readable.js:294:12)
+        at readableAddChunk (_stream_readable.js:275:11)
+        at Socket.Readable.push (_stream_readable.js:210:10)
+        at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+Info 1069 [21:14:52.819] Before ensureProjectForOpenFiles:
+Info 1070 [21:14:52.819] After ensureProjectForOpenFiles:
+Info 1071 [21:14:52.819] got projects updated in background, updating diagnostics for /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/Dashboard.js,/Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/App.js
+Info 1072 [21:15:19.641] Search path: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js
+Info 1073 [21:15:19.641] For info: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/ProtectedRoute.js :: No config files found.
+Info 1074 [21:17:41.416] Search path: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js
+Info 1075 [21:17:41.416] For info: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/auth.js :: No config files found.
+Info 1076 [21:19:5.379] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1077 [21:19:5.397] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 3 structureChanged: false Elapsed: 18ms
+Info 1078 [21:19:5.397] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1079 [21:19:5.871] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1080 [21:19:5.877] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 4 structureChanged: false Elapsed: 6ms
+Info 1081 [21:19:5.877] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1082 [21:19:5.879] getCompletionData: Get current token: 0
+Info 1083 [21:19:5.879] getCompletionData: Is inside comment: 0
+Info 1084 [21:19:5.879] getCompletionData: Get previous token 1: 0
+Info 1085 [21:19:5.879] getCompletionData: Get previous token 2: 0
+Info 1086 [21:19:5.879] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1087 [21:19:5.884] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 1088 [21:19:5.944] forEachExternalModuleToImportFrom: filtered out 62 modules by package.json contents
+Info 1089 [21:19:5.944] getSymbolsFromOtherSourceFileExports: 60
+Info 1090 [21:19:5.945] getCompletionData: Semantic work: 66
+Info 1091 [21:19:5.949] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 1092 [21:19:6.460] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1093 [21:19:6.469] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 5 structureChanged: false Elapsed: 9ms
+Info 1094 [21:19:6.469] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1095 [21:19:6.668] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1096 [21:19:6.673] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 6 structureChanged: false Elapsed: 5ms
+Info 1097 [21:19:6.673] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1098 [21:19:6.674] getCompletionData: Get current token: 0
+Info 1099 [21:19:6.674] getCompletionData: Is inside comment: 0
+Info 1100 [21:19:6.674] getCompletionData: Get previous token 1: 0
+Info 1101 [21:19:6.674] getCompletionData: Get previous token 2: 0
+Info 1102 [21:19:6.674] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1103 [21:19:6.676] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1104 [21:19:6.693] getCompletionData: Semantic work: 19
+Info 1105 [21:19:6.699] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 1106 [21:19:6.786] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1107 [21:19:6.791] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 7 structureChanged: false Elapsed: 5ms
+Info 1108 [21:19:6.791] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1109 [21:19:6.792] getCompletionData: Get current token: 0
+Info 1110 [21:19:6.792] getCompletionData: Is inside comment: 0
+Info 1111 [21:19:6.792] getCompletionData: Get previous token 1: 0
+Info 1112 [21:19:6.792] getCompletionData: Get previous token 2: 0
+Info 1113 [21:19:6.792] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1114 [21:19:6.794] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1115 [21:19:6.812] getCompletionData: Semantic work: 20
+Info 1116 [21:19:6.818] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 1117 [21:19:7.877] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1118 [21:19:7.886] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 8 structureChanged: false Elapsed: 9ms
+Info 1119 [21:19:7.886] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1120 [21:19:8.54] getCompletionData: Get current token: 0
+Info 1121 [21:19:8.55] getCompletionData: Is inside comment: 0
+Info 1122 [21:19:8.55] getCompletionData: Get previous token 1: 0
+Info 1123 [21:19:8.55] getCompletionData: Get previous token 2: 0
+Info 1124 [21:19:8.55] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1125 [21:19:8.58] getSymbolsFromOtherSourceFileExports: Recomputing list for details entry
+Info 1126 [21:19:8.60] forEachExternalModuleToImportFrom: filtered out 0 modules by package.json contents
+Info 1127 [21:19:8.60] getSymbolsFromOtherSourceFileExports: 2
+Info 1128 [21:19:8.75] getCompletionData: Semantic work: 20
+Info 1129 [21:19:8.339] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1130 [21:19:8.370] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 9 structureChanged: true Elapsed: 30ms
+Info 1131 [21:19:8.371] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 1132 [21:19:10.880] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/03cd901b294ae41bd69a919527b12b89a253ccd9.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1133 [21:19:10.881] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/03cd901b294ae41bd69a919527b12b89a253ccd9.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1134 [21:19:10.881] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/03cd901b294ae41bd69a919527b12b89a253ccd9.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1135 [21:19:10.881] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/03cd901b294ae41bd69a919527b12b89a253ccd9.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1136 [21:19:11.430] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/13dcd0f0cace21b52404fcbfa18d2dc1.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1137 [21:19:11.430] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/13dcd0f0cace21b52404fcbfa18d2dc1.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1138 [21:19:11.430] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/13dcd0f0cace21b52404fcbfa18d2dc1.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1139 [21:19:11.430] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/13dcd0f0cace21b52404fcbfa18d2dc1.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1140 [21:20:59.968] Search path: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js
+Info 1141 [21:20:59.969] For info: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/src/js/api.js :: No config files found.
+Info 1142 [21:21:34.449] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1143 [21:21:34.467] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 10 structureChanged: false Elapsed: 17ms
+Info 1144 [21:21:34.467] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1145 [21:21:35.765] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1146 [21:21:35.778] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 11 structureChanged: false Elapsed: 13ms
+Info 1147 [21:21:35.778] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1148 [21:21:36.130] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1149 [21:21:36.138] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 12 structureChanged: false Elapsed: 8ms
+Info 1150 [21:21:36.138] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1151 [21:21:36.139] getCompletionData: Get current token: 0
+Info 1152 [21:21:36.139] getCompletionData: Is inside comment: 0
+Info 1153 [21:21:36.139] getCompletionData: Get previous token 1: 0
+Info 1154 [21:21:36.139] getCompletionData: Get previous token 2: 0
+Info 1155 [21:21:36.139] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1156 [21:21:36.142] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 1157 [21:21:36.188] forEachExternalModuleToImportFrom: filtered out 62 modules by package.json contents
+Info 1158 [21:21:36.188] getSymbolsFromOtherSourceFileExports: 46
+Info 1159 [21:21:36.189] getCompletionData: Semantic work: 50
+Info 1160 [21:21:36.194] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 1161 [21:21:36.213] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1162 [21:21:36.219] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 13 structureChanged: false Elapsed: 6ms
+Info 1163 [21:21:36.219] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1164 [21:21:36.219] getCompletionData: Get current token: 0
+Info 1165 [21:21:36.219] getCompletionData: Is inside comment: 0
+Info 1166 [21:21:36.219] getCompletionData: Get previous token 1: 0
+Info 1167 [21:21:36.219] getCompletionData: Get previous token 2: 0
+Info 1168 [21:21:36.219] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1169 [21:21:36.222] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1170 [21:21:36.226] getCompletionData: Semantic work: 7
+Info 1171 [21:21:36.231] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 1172 [21:21:36.613] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1173 [21:21:36.624] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 14 structureChanged: false Elapsed: 11ms
+Info 1174 [21:21:36.624] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1175 [21:21:38.225] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1176 [21:21:38.236] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 15 structureChanged: false Elapsed: 11ms
+Info 1177 [21:21:38.236] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1178 [21:21:38.513] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1179 [21:21:38.521] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 16 structureChanged: false Elapsed: 7ms
+Info 1180 [21:21:38.521] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1181 [21:21:38.920] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1182 [21:21:38.925] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 17 structureChanged: false Elapsed: 5ms
+Info 1183 [21:21:38.925] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1184 [21:21:38.925] getCompletionData: Get current token: 0
+Info 1185 [21:21:38.925] getCompletionData: Is inside comment: 0
+Info 1186 [21:21:38.925] getCompletionData: Get previous token 1: 0
+Info 1187 [21:21:38.925] getCompletionData: Get previous token 2: 0
+Info 1188 [21:21:38.925] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1189 [21:21:38.929] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1190 [21:21:38.934] getCompletionData: Semantic work: 8
+Info 1191 [21:21:38.937] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 2
+Info 1192 [21:21:39.27] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1193 [21:21:39.32] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 18 structureChanged: false Elapsed: 5ms
+Info 1194 [21:21:39.32] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1195 [21:21:39.32] getCompletionData: Get current token: 0
+Info 1196 [21:21:39.32] getCompletionData: Is inside comment: 0
+Info 1197 [21:21:39.32] getCompletionData: Get previous token 1: 0
+Info 1198 [21:21:39.32] getCompletionData: Get previous token 2: 0
+Info 1199 [21:21:39.32] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1200 [21:21:39.35] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1201 [21:21:39.40] getCompletionData: Semantic work: 8
+Info 1202 [21:21:39.43] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 1203 [21:21:39.756] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1204 [21:21:39.766] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 19 structureChanged: false Elapsed: 10ms
+Info 1205 [21:21:39.766] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1206 [21:21:39.766] getCompletionData: Get current token: 0
+Info 1207 [21:21:39.766] getCompletionData: Is inside comment: 0
+Info 1208 [21:21:39.766] getCompletionData: Get previous token 1: 0
+Info 1209 [21:21:39.766] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1210 [21:21:39.767] getCompletionData: Semantic work: 1
+Info 1211 [21:21:39.769] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 1212 [21:21:40.136] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1213 [21:21:40.142] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 20 structureChanged: false Elapsed: 6ms
+Info 1214 [21:21:40.142] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1215 [21:21:40.142] getCompletionData: Get current token: 0
+Info 1216 [21:21:40.142] getCompletionData: Is inside comment: 0
+Info 1217 [21:21:40.142] getCompletionData: Get previous token 1: 0
+Info 1218 [21:21:40.142] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1219 [21:21:40.143] getCompletionData: Semantic work: 1
+Info 1220 [21:21:40.143] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 1221 [21:21:41.574] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1222 [21:21:41.587] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 21 structureChanged: false Elapsed: 13ms
+Info 1223 [21:21:41.587] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1224 [21:21:42.91] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1225 [21:21:42.99] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 22 structureChanged: false Elapsed: 8ms
+Info 1226 [21:21:42.99] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1227 [21:21:42.99] getCompletionData: Get current token: 0
+Info 1228 [21:21:42.99] getCompletionData: Is inside comment: 0
+Info 1229 [21:21:42.99] getCompletionData: Get previous token 1: 0
+Info 1230 [21:21:42.99] getCompletionData: Get previous token 2: 0
+Info 1231 [21:21:42.99] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1232 [21:21:42.100] getCompletionData: Semantic work: 1
+Info 1233 [21:21:42.100] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 1234 [21:21:43.386] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/56104713dc9814cae1ac469986825a557931a7cf.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1235 [21:21:43.386] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/56104713dc9814cae1ac469986825a557931a7cf.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1236 [21:21:43.386] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/56104713dc9814cae1ac469986825a557931a7cf.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1237 [21:21:43.386] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/56104713dc9814cae1ac469986825a557931a7cf.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1238 [21:21:43.436] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/dd6f20b37aa73273decd516cb18eb1ec.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1239 [21:21:43.436] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/dd6f20b37aa73273decd516cb18eb1ec.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1240 [21:21:43.436] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/dd6f20b37aa73273decd516cb18eb1ec.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1241 [21:21:43.437] Elapsed:: 1ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/dd6f20b37aa73273decd516cb18eb1ec.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1242 [21:22:15.214] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1243 [21:22:15.228] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 23 structureChanged: false Elapsed: 14ms
+Info 1244 [21:22:15.228] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1245 [21:22:15.628] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1246 [21:22:15.643] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 24 structureChanged: false Elapsed: 15ms
+Info 1247 [21:22:15.643] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1248 [21:22:16.51] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1249 [21:22:16.57] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 25 structureChanged: false Elapsed: 6ms
+Info 1250 [21:22:16.57] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1251 [21:22:17.59] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1252 [21:22:17.74] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 26 structureChanged: false Elapsed: 15ms
+Info 1253 [21:22:17.74] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1254 [21:22:18.215] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1255 [21:22:18.220] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 27 structureChanged: false Elapsed: 5ms
+Info 1256 [21:22:18.220] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1257 [21:22:18.220] getCompletionData: Get current token: 0
+Info 1258 [21:22:18.220] getCompletionData: Is inside comment: 0
+Info 1259 [21:22:18.221] getCompletionData: Get previous token 1: 1
+Info 1260 [21:22:18.221] getCompletionData: Get previous token 2: 0
+Info 1261 [21:22:18.221] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1262 [21:22:18.223] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1263 [21:22:18.227] getCompletionData: Semantic work: 6
+Info 1264 [21:22:18.231] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 1265 [21:22:18.251] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1266 [21:22:18.257] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 28 structureChanged: false Elapsed: 5ms
+Info 1267 [21:22:18.257] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1268 [21:22:18.257] getCompletionData: Get current token: 0
+Info 1269 [21:22:18.257] getCompletionData: Is inside comment: 0
+Info 1270 [21:22:18.257] getCompletionData: Get previous token 1: 0
+Info 1271 [21:22:18.257] getCompletionData: Get previous token 2: 0
+Info 1272 [21:22:18.257] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1273 [21:22:18.261] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1274 [21:22:18.266] getCompletionData: Semantic work: 9
+Info 1275 [21:22:18.270] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 1276 [21:22:18.425] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1277 [21:22:18.431] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 29 structureChanged: false Elapsed: 6ms
+Info 1278 [21:22:18.431] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1279 [21:22:18.431] getCompletionData: Get current token: 0
+Info 1280 [21:22:18.431] getCompletionData: Is inside comment: 0
+Info 1281 [21:22:18.431] getCompletionData: Get previous token 1: 0
+Info 1282 [21:22:18.431] getCompletionData: Get previous token 2: 0
+Info 1283 [21:22:18.431] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1284 [21:22:18.436] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 1285 [21:22:18.441] getCompletionData: Semantic work: 10
+Info 1286 [21:22:18.447] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 1287 [21:22:18.464] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1288 [21:22:18.470] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 30 structureChanged: false Elapsed: 6ms
+Info 1289 [21:22:18.470] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1290 [21:22:18.471] getCompletionData: Get current token: 0
+Info 1291 [21:22:18.471] getCompletionData: Is inside comment: 0
+Info 1292 [21:22:18.471] getCompletionData: Get previous token 1: 0
+Info 1293 [21:22:18.471] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1294 [21:22:18.471] getCompletionData: Semantic work: 0
+Info 1295 [21:22:18.471] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 1296 [21:22:18.683] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1297 [21:22:18.689] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 31 structureChanged: false Elapsed: 6ms
+Info 1298 [21:22:18.689] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1299 [21:22:18.689] getCompletionData: Get current token: 0
+Info 1300 [21:22:18.689] getCompletionData: Is inside comment: 0
+Info 1301 [21:22:18.689] getCompletionData: Get previous token 1: 0
+Info 1302 [21:22:18.689] getCompletionData: Get previous token 2: 0
+Info 1303 [21:22:18.690] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1304 [21:22:18.690] getCompletionData: Semantic work: 0
+Info 1305 [21:22:18.691] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 1306 [21:22:19.246] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1307 [21:22:19.259] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 32 structureChanged: false Elapsed: 13ms
+Info 1308 [21:22:19.259] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1309 [21:22:19.735] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1310 [21:22:19.740] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 33 structureChanged: false Elapsed: 5ms
+Info 1311 [21:22:19.740] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1312 [21:22:19.741] getCompletionData: Get current token: 0
+Info 1313 [21:22:19.741] getCompletionData: Is inside comment: 0
+Info 1314 [21:22:19.742] getCompletionData: Get previous token 1: 0
+Info 1315 [21:22:19.742] getCompletionData: Get previous token 2: 0
+Info 1316 [21:22:19.742] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 1317 [21:22:19.742] getCompletionData: Semantic work: 0
+Info 1318 [21:22:20.407] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1319 [21:22:20.414] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 34 structureChanged: false Elapsed: 7ms
+Info 1320 [21:22:20.414] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1321 [21:22:21.513] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/069cf46a1d3a4bdbda78e1d6ead70d068e12c39b.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1322 [21:22:21.514] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/069cf46a1d3a4bdbda78e1d6ead70d068e12c39b.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1323 [21:22:21.514] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/069cf46a1d3a4bdbda78e1d6ead70d068e12c39b.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1324 [21:22:21.514] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/069cf46a1d3a4bdbda78e1d6ead70d068e12c39b.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1325 [21:22:21.564] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/4e31a6a266cd7a5e84bd9f50727771fc.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1326 [21:22:21.565] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/4e31a6a266cd7a5e84bd9f50727771fc.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1327 [21:22:21.565] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/4e31a6a266cd7a5e84bd9f50727771fc.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1328 [21:22:21.565] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/4e31a6a266cd7a5e84bd9f50727771fc.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1329 [21:22:34.838] Starting updateGraphWorker: Project: /dev/null/inferredProject2*
+Info 1330 [21:22:34.855] Finishing updateGraphWorker: Project: /dev/null/inferredProject2* Version: 35 structureChanged: false Elapsed: 17ms
+Info 1331 [21:22:34.855] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 1332 [21:22:37.374] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/4bde5980de41bd12f19a767819938ff2a430ead4.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1333 [21:22:37.374] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/4bde5980de41bd12f19a767819938ff2a430ead4.json.gz :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1334 [21:22:37.374] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/4bde5980de41bd12f19a767819938ff2a430ead4.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1335 [21:22:37.374] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/eslint-loader/4bde5980de41bd12f19a767819938ff2a430ead4.json.gz :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1336 [21:22:37.424] DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/c42db7bcb1365312d6ef818389dda124.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1337 [21:22:37.424] Elapsed:: 0ms DirectoryWatcher:: Triggered with /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/c42db7bcb1365312d6ef818389dda124.json :: WatchInfo: /users/oyvind/documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 1338 [21:22:37.424] DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/c42db7bcb1365312d6ef818389dda124.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
+Info 1339 [21:22:37.424] Elapsed:: 0ms DirectoryWatcher:: Triggered with /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules/.cache/babel-loader/c42db7bcb1365312d6ef818389dda124.json :: WatchInfo: /Users/oyvind/Documents/programming/projects/web/workout_tracker/workout_tracker_frontend/node_modules 1 undefined Project: /dev/null/inferredProject2* WatchType: Failed Lookup Locations
