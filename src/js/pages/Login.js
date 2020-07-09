@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import '../css/Login.css';
+import '../../css/Login.css';
 import $ from 'jquery';
 
 import {Redirect} from "react-router-dom";
 
-import auth from "./auth";
+import auth from "../auth";
 
 
 export default function Login() {
@@ -39,24 +39,24 @@ export default function Login() {
           : null;
     
     return (
-	<div className="Userform" id="Signup">
-	    <div className="form-container">
+        <div className="Userform" id="Signup">
+          <div className="form-container">
 
-	      <h1>Login</h1>
-	      {errorMessage}
-	      <form action="#" onSubmit={loginSubmit} id="signupform">
-		<label htmlFor="email">Email adress</label>
-		<input type="text" name="email" id="email" placeholder="Enter your email" />
+            <h1>Login</h1>
+            {errorMessage}
+            <form action="#" onSubmit={loginSubmit} id="signupform">
+              <label htmlFor="email">Email adress</label>
+              <input type="text" name="email" id="email" placeholder="Enter your email" />
 
-		<label htmlFor="password">Password</label>
-		<input type="password" name="password" id="password" placeholder="Enter your password" />
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Enter your password" />
 
-		<input type="submit" value="Login" className="submit-btn" />
-	      </form>
+              <input type="submit" value="Login" className="submit-btn" />
+            </form>
 
-              <p>Dont have a user? Sign up <a href="/signup">here</a></p>
+            <p>Dont have a user? Sign up <a href="/signup">here</a></p>
+	      </div>
 	    </div>
-	</div>
     );
 }
 

@@ -1,68 +1,52 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
 } from "react-router-dom";
 
-import Login from './Login.js';
-import Signup from './Signup.js';
-import Dashboard from './Dashboard.js';
-import Menu from './Menu.js';
-import ProtectedRoute from "./ProtectedRoute";
-import Custom404 from "./Custom404";
-import auth from "./auth";
+import Login from './pages/Login.js';
+import Signup from './pages/Signup.js';
+import Dashboard from './pages/Dashboard.js';
+import ProtectedRoute from "./pages/ProtectedRoute";
+import Custom404 from "./pages/Custom404";
 
-
-import $ from 'jquery';
 
 import '../css/App.css';
 
-
-const DashBoardWrapper = () => (
-    <div>
-      <Menu current="dashboard"/>
-      <Dashboard/>      
-    </div>
-);
-
 function App() {
-    
-    return (
-	<div id="App">
-	    <Router>
-		<Switch>
-		    
-		  <Route exact path="/login">
-		    <Login />
-		  </Route>
-		  <Route exact path ="/signup">
-		    <Signup />
-		  </Route>
-	          <ProtectedRoute exact path="/dashboard">
-                    <Menu current="dashboard"/>
-                    <Dashboard/>
-                  </ProtectedRoute>
-		  <Route exact path="/about">
-		    <Menu current="about" />
-		    <div>About us</div>
-		  </Route>
-		  <Route exact path="/">
-		    <Redirect to='/dashboard'/>
-		  </Route>
+  
+  return (
+    <div id="App">
+      <Router>
+        <Switch>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          
+          <Route exact path ="/signup">
+            <Signup />
+          </Route>
 
-                  <Route exact path="*" component={Custom404}/>
-		</Switch>
+          <ProtectedRoute exact path="/dashboard">
+            <Dashboard/>
+          </ProtectedRoute>
 
-	    </Router>
+          <Route exact path="/">
+            <Redirect to='/dashboard'/>
+          </Route>
+
+          <Route exact path="*" component={Custom404}/>
+        </Switch>
+
+      </Router>
 
 
-	</div>
+    </div>
 
-    );
+  );
 }
 
 export default App;

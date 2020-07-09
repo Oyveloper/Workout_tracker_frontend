@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import '../css/Login.css';
+import '../../css/Login.css';
 import {Redirect} from "react-router-dom";
-import auth from "./auth";
+import auth from ".././auth";
 
 
 export default function Signup() {

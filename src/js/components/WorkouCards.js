@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/WorkoutCard.css";
+import "../../css/WorkoutCard.css";
 import $ from 'jquery';
 
-import auth from "./auth";
+import auth from "../auth";
 
 import Chart from "chart.js";
 
@@ -11,14 +11,14 @@ export function WorkoutOverviewCard(props) {
     const maxCount = props.maxCount;
 
     return(
-	<div className="WorkoutOverviewCard" name={name}>
-	    <h2>{name}</h2>
-	    <div className="max-container">
-		<p className="max-title">Personal best</p>
-		<p className="max">{maxCount}</p>
-	    </div>
-	    
-	</div>
+        <div className="WorkoutOverviewCard" name={name}>
+          <h2>{name}</h2>
+          <div className="max-container">
+            <p className="max-title">Personal best</p>
+            <p className="max">{maxCount}</p>
+          </div>
+          
+        </div>
     );
     
     
@@ -32,44 +32,44 @@ function lineChartForWorkout(workout, targetID) {
 
     var counter = 0; 
     workout.entries.forEach((entry) => {
-	data.push(entry.ammount);
-	labels.push(counter);
-	counter += 1;
+        data.push(entry.ammount);
+        labels.push(counter);
+        counter += 1;
 
     });
 
     var options = {
-	legend: {
-	    display: false
-	},
-	scales: {
+        legend: {
+            display: false
+        },
+        scales: {
             xAxes: [{
-		gridLines: {
+                gridLines: {
                     display:false
-		}
+                }
             }],
             yAxes: [{
-		gridLines: {
+                gridLines: {
                     display:false
-		}   
+                }   
             }]
-	}
+        }
     };
 
     var chart = new Chart(ctx, {
-	type: 'line',
-	data: {
-	    labels: labels,
-	    datasets: [{
-		label: "Reps",
-		data: data,
-		fill: false,
-		backgroundColor: "#0099ff",
-		borderColor: "#0099ff",
-		
-	    }]
-	},
-	options: options,
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Reps",
+                data: data,
+                fill: false,
+                backgroundColor: "#0099ff",
+                borderColor: "#0099ff",
+                
+            }]
+        },
+        options: options,
 
     });
 }
@@ -79,26 +79,26 @@ export function WorkoutDetailCard(props) {
     const workoutData = props.workoutData;
 
     const workoutGraph = (
-	<div className="workout-graph-container">
-	    <canvas id="workout-graph" height="70px"></canvas>
-	</div>
+        <div className="workout-graph-container">
+          <canvas id="workout-graph" height="70px"></canvas>
+        </div>
     );
 
 
 
     setTimeout(() => {
-	lineChartForWorkout(workoutData, "workout-graph");
+        lineChartForWorkout(workoutData, "workout-graph");
     }, 200);
     
     return (
-	<div className="WorkoutDetailCard popup-card">
-	    <h1>{workoutData.name}</h1>
-	    <div className="max-container">
-		{workoutGraph}
-		<div className="max-title-detail">Personal best: {workoutData.maxRep}</div>
+        <div className="WorkoutDetailCard popup-card">
+          <h1>{workoutData.name}</h1>
+          <div className="max-container">
+            {workoutGraph}
+            <div className="max-title-detail">Personal best: {workoutData.maxRep}</div>
 
-	    </div>
-	</div>
+          </div>
+        </div>
     );
 }
 
@@ -182,7 +182,7 @@ export function NewWorkoutCard(props) {
     
     return (
         <div className="NewWorkoutCard popup-card">
-        <h1>New Workout</h1>
+          <h1>New Workout</h1>
           <form action="" id="newWorkoutHtmlForm" onSubmit={newWorkoutSubmit}>
             <label htmlFor="wname">Workout Name</label><br/>
             <input name="wname" id="wname" type="text"  placeholder="Enter workout name"/>

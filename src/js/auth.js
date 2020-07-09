@@ -80,7 +80,7 @@ class Auth {
     checkAuthentication(cb) {
         const jwt = this.getJwt();
 
-        if (jwt != "" ||  jwt != null) {
+        if (jwt != "" &&  jwt != null) {
 
             $.ajax({
                 type: "GET",
