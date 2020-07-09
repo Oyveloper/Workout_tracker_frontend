@@ -4,7 +4,6 @@
 
     box-sizing: border-box;
     padding: 10px;
-    margin-bottom: 20px;
 
     width: 100%;
 
@@ -17,7 +16,6 @@
 
     transition: transform 0.3s;
 
-    margin: 10px;
 }
 
 .WorkoutOverviewCard:hover {
