@@ -14,7 +14,7 @@ export default function Login() {
 
         e.preventDefault();
 
-        var email = document.getElementById("email").value;
+      var email = document.getElementById("email").value.trim();
         var password = document.getElementById("password").value;
 
 

@@ -6,6 +6,8 @@ import api from "../api";
 import {WorkoutOverviewCard, WorkoutDetailCard, NewWorkoutCard} from "../components/WorkouCards.js";
 import AddBtn from '../components/AddBtn.js';
 
+import Navbar from "../components/navbar.js";
+
 import "../../css/Dashboard.css";
 
 export default function Dashboard() {
@@ -105,6 +107,7 @@ export default function Dashboard() {
     return (
         hasData
             ? <div className="Dashboard">
+                <Navbar/>
                 <h1>Dashboard</h1>
                 {noDataMessage}
                 <ul>

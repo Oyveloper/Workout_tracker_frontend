@@ -1,8 +1,7 @@
 import React from "react";
 import "../../css/WorkoutCard.css";
-import $ from 'jquery';
 
-import auth from "../auth";
+import api from "../api.js"
 
 import Chart from "chart.js";
 
@@ -147,7 +146,6 @@ export function NewWorkoutCard(props) {
             month = "0" + month;
         }
 
-        console.log(day + month + year);
         
         const data = {
             name: wname,
@@ -157,25 +155,10 @@ export function NewWorkoutCard(props) {
             ammount: number
         };
 
-        $.ajax({
-            type: "POST",
-            url: "api/addWorkoutEntry",
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("Authorization", auth.getJwt());
-
-            },
-            headers: {
-                "Authorization": auth.getJwt()
-            },
-            data: data
-        }).fail((e) => {
-            console.log(e);
-        }).done((response) => {
-            // Success!
-            console.log("Successflully added a new workout");
+        api.uploadNewWorkout(data, () => {
             dismissCard();
-            
         });
+
     }
 
     var measurementOptions = Object.keys(measurements).map(s => <option key={s} value={s}>{s}</option>);
